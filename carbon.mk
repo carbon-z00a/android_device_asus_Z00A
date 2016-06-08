@@ -11,7 +11,7 @@ $(call inherit-product, vendor/carbon/config/common_phone.mk)
 $(call inherit-product, device/asus/Z00A/device.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/carbon/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/carbon/config/nfc_enhanced.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z00A/overlay
 
