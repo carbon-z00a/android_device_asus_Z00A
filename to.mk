@@ -1,21 +1,24 @@
+# Do not install SuperSu
+INSTALL_SUPERSU := false
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common LineageOS stuff.
+# Inherit some common TO stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/Z00A/device.mk)
 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/to/config/common_full_phone.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z00A/overlay
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_Z00A
+PRODUCT_NAME := to_Z00A
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_Z00A
 PRODUCT_MANUFACTURER := asus
